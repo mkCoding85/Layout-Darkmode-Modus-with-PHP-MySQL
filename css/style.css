@@ -1,0 +1,411 @@
+/* Copyright by Mario Kabey 14.02.2019 */
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+/* Standart Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family:  Arial, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+a {
+    text-decoration: none; 
+}
+
+/* Header Style */
+header {
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    display: block;
+    position: fixed;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003366+1,4a79b4+100 */
+    background: #003366; /* Old browsers */ /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  hsl(219, 40%, 24%) 30%,hsla(215,48%,44%,1) 70%); /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-linear-gradient(left, hsl(219, 40%, 24%) 30%, hsla(215,48%,44%,1) 70%);
+    background: linear-gradient(to right,  hsl(219, 40%, 24%) 30%, hsla(215,48%,44%,1) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003366', endColorstr='#4a79b4',GradientType=1 ); /* IE6-9 */
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.22);
+}
+
+
+/* Navigation */
+.navigation {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-brand a {
+    top: 0px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+}
+
+.link-container {
+    list-style: none;
+    display: flex;
+}
+
+.link {
+    padding: 10px;
+    margin: 0 5px;
+    position: relative;
+}
+
+.link a {
+    color: #fff;
+    font-weight: 500;
+    font-size: large;
+    text-decoration: none;
+}
+
+/* HOVER-EFFECT */
+.link:hover:not(.active) {
+    opacity: 0.8;
+}
+
+/* ACTIVE-LINK STYLE */
+.link.active::before {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+/* Navigation Style End */
+
+
+/* Content Bereich */
+.main {
+    display: block;
+    max-width: 96%;
+    width: 1080px;
+    margin: 25px auto;
+    min-height: 85vh;
+    padding: 0;
+}
+
+.main h1 {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 2em;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: hsl(215,45%,45%);
+}
+
+.main p {
+    font-size: 1em;
+    line-height: 1.4em;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 200;
+    margin: 10px 10px 10px 20px;
+    padding: 0px;
+    text-align: justify;
+}
+
+.main article {
+    display: inline-block;
+    width: 71.5%;
+    /* background: #fff; */
+    vertical-align: top;
+    margin-top: 100px;
+    padding: 5px;
+    text-align: left;
+    box-shadow: 0px 2px 6px #ccc;
+}
+
+.main article img {
+    width: 400px;
+    height: auto;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.main aside {
+    margin-top: 100px;
+    display: inline-block;
+    width: 25%;
+    margin-left: 2.5%;
+    padding: 0em;
+    vertical-align: top;
+}
+
+.main aside section {
+    margin-bottom: 10px;
+    /* background: #fff; */
+    border-bottom: 0.199em solid hsl(215,45%,45%);
+    box-shadow: 0px 2px 6px #ccc;
+}
+
+.main aside section h2 {
+    padding: 10px 10px 15px 20px;
+}
+
+.main aside section ul {
+    padding: 0px 10px 15px 35px;
+}
+
+.main aside section ul li {
+    line-height: 1.6em;
+}
+
+
+/* Toggle-Switch Style Anfang */
+.darkmode {
+    position: relative;
+    top: -10px;
+    margin: 10px 20px;
+}
+
+.checkbox { 
+    position: relative; 
+}
+
+.btn {
+    color: #fff;
+    border: none;
+    background-color: #4c7cd4;
+    padding: 5px 10px;
+}
+
+.checkbox label {
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 24px;
+    position: absolute;
+    background-color: #3e41e4;
+    border-radius: 2px;
+}
+
+.checkbox input[type="checkbox"] { 
+    visibility: hidden; 
+} 
+
+.checkbox label:after {
+    top: 1.5px;
+    left: 1.5px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 1px;
+    position: absolute;
+    transition: all 0.8s;
+    background-color: #f1f1f1;
+}
+.checkbox input[type="checkbox"]:checked + label:after {
+    left: 28px;
+}
+/* Toggle-Switch Style Ende */
+
+
+/* Footer Bereich */
+footer {
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    display: block;
+    padding: 20px;
+    background: #353535;
+}
+
+footer ul {
+    display: block;
+    width: 100%;
+    max-width: 980px;
+    margin: 0px auto;
+}
+
+footer ul li {
+    display: inline;
+    font-size: 16px;
+    line-height: 3em;
+    color: #fff;
+    float: left;
+    padding: 0px 20px 0px 5px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+
+/* Scroll button */
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 0px; 
+    right: 25px; 
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    background-color: hsl(215,45%,45%);
+    color: white; 
+    cursor: pointer; 
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 16px; 
+}
+  
+#myBtn:hover {
+    background-color: #b1b1b1; 
+    color: #222;
+}
+
+
+/* Mobile Style */
+@media screen and (max-width: 800px) {
+
+    body {
+        font-size: 90%;
+    }
+
+    h1 {
+        font-size: 1.6em;
+        line-height: 1.6em;
+    }
+
+    .logo-brand {
+        margin-top: 5px;
+    }
+
+    /* TOGGLE-BTN STYLE */
+    .toggle-btn {
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 30px;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .toggle-btn span {
+        z-index: 10;
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+    }
+
+    .toggle-btn span:nth-child(2) {
+        top: 50%;
+    }
+
+    .toggle-btn span:nth-child(3) {
+        top: 75%;
+    }
+    /* END TOGGLE-BTN STYLE */
+
+    /* LINK-CONTAINER */
+    .link-container {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        padding: 0px 25px;
+        text-align: left;
+        flex-direction: column;
+        background: #003366; /* Old browsers */ /* FF3.6-15 */
+        background: -webkit-linear-gradient(to right,  hsl(219, 40%, 24%) 30%,hsla(215,48%,44%,1) 70%); /* Chrome10-25,Safari5.1-6 */
+        background: -webkit-linear-gradient(to right, hsl(219, 40%, 24%) 30%, hsla(215,48%,44%,1) 70%);
+        background: linear-gradient(to right,  hsl(219, 40%, 24%) 30%, hsla(215,48%,44%,1) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003366', endColorstr='#4a79b4',GradientType=1 ); /* IE6-9 */
+    }
+
+    /* LINK-STYLE */
+    .link {
+        display: block;
+        height: 40px;
+        margin-left: auto;
+    }
+
+    /* HOVER-EFFECT */
+    .link:hover:not(.active) {
+        opacity: 0.8;
+    }
+
+    /* ----------------- */
+    /* ACTIVE-LINK STYLE */
+    .link.active::before {
+        content: '';
+        position: absolute;
+        bottom: 2.5px;
+        left: 0%;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+    }
+
+    /* MOBILE-ANZEIGE */
+    .open-menu + .link-container {
+        display: block;
+        height: auto;
+        box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.22);
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .main {
+        margin-top: 80px;
+    }
+
+    .main aside, .main article {
+        width: 100%;
+        display: block;
+        margin: 0px 0px 15px 0px;
+    }
+
+    aside section {
+        display: block;
+        margin-top: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+    body {
+        font-size: 86%;
+    }
+
+    h1 {
+        font-size: 1.6em;
+        line-height: 1.8em;
+    }
+
+
+}
