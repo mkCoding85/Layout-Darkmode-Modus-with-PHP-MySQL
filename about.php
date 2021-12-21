@@ -64,7 +64,7 @@ color: <?php if ($checkbox1 == 1) { echo $color; } else { echo "#222"; } ?>;">
     <section class="main">
 
         <!-- Center-Content -->
-        <article style="background-color: <?php if ($checkbox1 == 1) { echo $bgcolor; } else { echo "#fff"; } ?>; 
+        <article style="background-color: <?php if ($checkbox1 == 1) { echo "#555"; } else { echo "#fff"; } ?>; 
         color: <?php if ($checkbox1 == 1) { echo $color; } else { echo "#222"; } ?>;">
 
             <h1>About me</h1>
@@ -88,7 +88,7 @@ color: <?php if ($checkbox1 == 1) { echo $color; } else { echo "#222"; } ?>;">
         <aside>
 
             <!-- section-block -->
-            <section style="background-color: <?php if ($checkbox1 == 1) { echo $bgcolor; } else { echo "#fff"; } ?>; 
+            <section style="background-color: <?php if ($checkbox1 == 1) { echo "#555"; } else { echo "#fff"; } ?>; 
             color: <?php if ($checkbox1 == 1) { echo $color; } else { echo "#222"; } ?>;">
                 <h2>Artikel</h2>
                 <marquee scrollamount="5" scrolldelay="2">
@@ -98,14 +98,14 @@ color: <?php if ($checkbox1 == 1) { echo $color; } else { echo "#222"; } ?>;">
             <!-- section-block -->
 
             <!-- section-block -->
-            <section style="background-color: <?php if ($checkbox1 == 1) { echo $bgcolor; } else { echo "#fff"; } ?>; 
+            <section style="background-color: <?php if ($checkbox1 == 1) { echo "#555"; } else { echo "#fff"; } ?>; 
             color: <?php if ($checkbox1 == 1) { echo $color; } else { echo "#222"; } ?>;">
                 <h2>Information</h2>
             </section>
             <!-- section-block -->
 
             <!-- section-block -->
-            <section style="background-color: <?php if ($checkbox1 == 1) { echo $bgcolor; } else { echo "#fff"; } ?>; 
+            <section style="background-color: <?php if ($checkbox1 == 1) { echo "#555"; } else { echo "#fff"; } ?>; 
             color: <?php if ($checkbox1 == 1) { echo $color; } else { echo "#222"; } ?>;">
                 <h2>Kategorie</h2>
                 <ul>

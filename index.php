@@ -67,7 +67,7 @@ color: <?php if ($checkbox1 == 1) { echo $color; } else { echo "#222"; } ?>;">
     <section class="main">
 
         <!-- Center-Content -->
-        <article style="background-color: <?php if ($checkbox1 == 1) { echo $bgcolor; } else { echo "#fff"; } ?>; 
+        <article style="background-color: <?php if ($checkbox1 == 1) { echo "#555"; } else { echo "#fff"; } ?>; 
         color: <?php if ($checkbox1 == 1) { echo $color; } else { echo "#222"; } ?>;">
 
             <h1>Home</h1>
@@ -100,7 +100,7 @@ color: <?php if ($checkbox1 == 1) { echo $color; } else { echo "#222"; } ?>;">
         <aside>
 
             <!-- section-block -->
-            <section style="background-color: <?php if ($checkbox1 == 1) { echo $bgcolor; } else { echo "#fff"; } ?>; 
+            <section style="background-color: <?php if ($checkbox1 == 1) { echo "#555"; } else { echo "#fff"; } ?>; 
             color: <?php if ($checkbox1 == 1) { echo $color; } else { echo "#222"; } ?>;">
                 <h2>Artikel</h2>
                 <marquee scrollamount="5" scrolldelay="2">
@@ -110,16 +110,19 @@ color: <?php if ($checkbox1 == 1) { echo $color; } else { echo "#222"; } ?>;">
             <!-- section-block -->
 
             <!-- section-block -->
-            <section style="background-color: <?php if ($checkbox1 == 1) { echo $bgcolor; } else { echo "#fff"; } ?>; 
+            <section style="background-color: <?php if ($checkbox1 == 1) { echo "#555"; } else { echo "#fff"; } ?>; 
             color: <?php if ($checkbox1 == 1) { echo $color; } else { echo "#222"; } ?>;">
                 <h2>Dark Mode Modus</h2>
                 <form action="save.php" class="darkmode" method="POST">
                     <div class="checkbox">
-                        <input type="checkbox" id="id_checkbox1" name="checkbox1" value="1" 
+                        <input type="checkbox" id="checkbox1" name="checkbox1" value="1" 
                         <?php if ($checkbox1 == 1) : ?> checked <?php endif; ?>>
-                        <label for="id_checkbox1"></label>
-                    </div><br>
-                    <input type="submit" class="btn" value="Aktualisieren">
+                        <label for="checkbox1"></label>
+                    </div>
+                    <span class="color-update">
+                        <input type="submit" class="btn" value="Speichern"> 
+                    </span>
+                    
                 </form>
 
                 <?php } else {
@@ -134,7 +137,7 @@ color: <?php if ($checkbox1 == 1) { echo $color; } else { echo "#222"; } ?>;">
             <!-- section-block -->
 
             <!-- section-block -->
-            <section style="background-color: <?php if ($checkbox1 == 1) { echo $bgcolor; } else { echo "#fff"; } ?>; 
+            <section style="background-color: <?php if ($checkbox1 == 1) { echo "#555"; } else { echo "#fff"; } ?>; 
             color: <?php if ($checkbox1 == 1) { echo $color; } else { echo "#222"; } ?>;">
                 <h2>Kategorie</h2>
                 <ul>
